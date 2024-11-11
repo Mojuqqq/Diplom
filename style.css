@@ -1,0 +1,287 @@
+body {
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Roboto', serif;
+  font-size: 20px;
+  background: #fbfbfb;
+  scroll-behavior:smooth;
+}
+
+.header {
+  max-width: 1220px;
+  padding: 18px 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+.connect a {
+  font-size: 25px;
+}
+
+.connect button {
+  font-size: 16px;
+  color: #f63b54;
+  padding: 16px 45px;
+  border: 1px solid #f63b54;
+}
+
+.nav_buttom {display: none;}
+
+.nav_buttom div {
+    width: 35px;
+    height: 1px;
+    background-color: #f63b54;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.nav-list_none {
+    padding: 20px;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    color: #8993ad;
+    border-radius: 25px;
+    background: rgb(246,59,84);
+    background: linear-gradient(0deg, rgba(246,59,84,0.4150035014005602) 0%, rgba(255,255,255,0.7203256302521008) 100%);
+}
+
+.nav-list_flex {
+  display: flex;
+}
+
+.ellipsephone {
+  display: none;
+}
+
+/*_________________________________*/
+
+.preview-fon {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 0 0 20px;
+  background: url(img/fon.png) no-repeat;
+  background-position: right -50px top 0px;
+}
+
+.preview {
+  max-width: 1200px;
+  margin: auto;
+  padding: 200px 0;
+}
+
+.preview h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.preview p {
+  margin-bottom: 45px;
+  font-size: 25px;
+  color: #8993ad;
+}
+
+.preview button, .produce button, .ins-but {
+  padding: 24px 75px;
+  color: #ffffff;
+  background-color: #ff4e2e;
+}
+
+
+.produce {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 100px auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 95px;
+}
+
+.produce h2, .instance h2 {
+  font-size: 54px;
+}
+
+.produce-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.produce-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: #8993ad;
+}
+
+.instance {
+  margin: 150px auto 150px;
+  text-align: center;
+}
+
+#mySlider {
+  max-width: 1220px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.splide__list {
+  justify-content: space-between;
+}
+
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  color: #8993ad;
+}
+
+.splide__arrow {
+  background-color: white;
+}
+
+.splide__arrow:disabled {
+  opacity: 0.3;
+}
+
+.splide__arrow--next {
+  right: 0;
+}
+
+.splide__arrow--prev {
+  left: 0;
+}
+
+.splide__pagination__page.is-active {
+  background: #f63b54;
+}
+
+.splide__pagination {
+  bottom: -20px;
+}
+
+.price-fon {
+  width: 100%;
+  padding: 75px 0;
+  background: url(img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.price {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  color: #ffffff;
+}
+
+.price h3 {
+  max-width: 900px;
+  margin: auto;
+  font-size: 45px;
+  line-height: 1.5;
+}
+
+.price p {
+  max-width: 900px;
+  margin: auto;
+  line-height: 2;
+}
+
+.footer {
+  max-width: 1220px;
+  margin: auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-list {
+  color: #8993ad;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list:first-child ul {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-list:nth-child(2) {
+  gap: 10px;
+}
+
+.footer-list:nth-child(2) a {
+  padding-right: 24px;
+  font-size: 25px;
+  display: flex;
+  gap: 15px;
+  color: #000000;
+}
+
+.footer-list:last-child button {
+  font-size: 16px;
+  padding: 15px 65px;
+  border: 1px solid #ff4e2e;
+  color: #ff6375;
+}
+
+.footer-list:last-child {
+  gap: 30px;
+}
+.link-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #31293c;
+}
